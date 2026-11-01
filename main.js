@@ -39,7 +39,6 @@
       ['18-51-59', 'Certificate of honour, 2nd place', '“Iqtidor” school ensemble competition, 4 April 2025'],
       ['18-52-19', 'Certificate of honour, excellent results', 'School No. 52, 24 May 2025'],
       ['18-52-33', 'Graduation certificate, dutar', 'Children’s Music and Art School No. 26, 31 May 2025'],
-      ['18-52-06', 'Letter of gratitude, Youth Day', 'Samarkand District Administration'],
       ['18-52-15', 'Certificate of participation', 'School No. 52'],
     ].map(([f, title, note]) => ({ src: `assets/docs/${f}.jpg`, alt: `${title}. ${note}.`, title, note })),
   };

@@ -201,9 +201,7 @@ figcaption .t { color: var(--ink); font-weight: 600; margin-right: 6px; }
 .recognitions li { color: var(--ink-2); }
 .recognitions li b { color: var(--ink); }
 .community-docs { grid-column: 7 / 13; display: grid; grid-template-columns: 1fr 1fr; gap: 32px var(--gap); }
-.cd-main { grid-column: 1 / 3; }
-.cd-main img { aspect-ratio: 4 / 3; object-fit: cover; }
-.cd-side img { aspect-ratio: 1; object-fit: cover; object-position: 50% 35%; }
+.cd-side img { aspect-ratio: 3 / 4; object-fit: cover; }
 
 /* Honours */
 .honours { align-items: start; }
@@ -238,7 +236,9 @@ figcaption .t { color: var(--ink); font-weight: 600; margin-right: 6px; }
 .contact-list a { text-decoration: none; }
 .contact-list a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .contact-text .btn { margin-top: 40px; }
-.contact-art { grid-column: 7 / 13; }
+.contact-art { grid-column: 7 / 13; display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); align-items: start; }
+.contact-art figure:last-child { margin-top: 64px; }
+.contact-art img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 70%; }
 
 /* Footer */
 .foot { margin-top: var(--section); padding: 0 var(--m) 32px; background: var(--ink); color: var(--paper); overflow: hidden; }
@@ -327,6 +327,8 @@ html.js [data-reveal].in { opacity: 1; transform: none; }
   .doc .d { grid-row: auto; color: var(--accent); font-size: var(--s-small); }
   .contact-list { grid-template-columns: 1fr; gap: 16px; }
   .contact-text .btn { width: 100%; }
+  .contact-art { gap: 12px; }
+  .contact-art figure:last-child { margin-top: 32px; }
   .foot-name { font-size: 15vw; }
   .foot-row { grid-template-columns: 1fr; }
   .viewer img { height: calc(100svh - 190px); }
